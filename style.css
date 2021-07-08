@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+.more-pens {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 10;
+}
+
+a.white-mode,
+a.white-mode:link,
+a.white-mode:visited,
+a.white-mode:active {
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-decoration: none;
+  background: #212121;
+  padding: 4px 8px;
+  color: #f7f7f7;
+}
+a.white-mode:hover,
+a.white-mode:link:hover,
+a.white-mode:visited:hover,
+a.white-mode:active:hover {
+  background: #edf3f8;
+  color: #212121;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #e5ebf1;
+  background: -moz-linear-gradient(top, #e5ebf1 0%, #e5ebf1 67%, #e1e5ea 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #e5ebf1 0%,
+    #e5ebf1 67%,
+    #e1e5ea 100%
+  );
+  background: linear-gradient(to bottom, #e5ebf1 0%, #e5ebf1 67%, #e1e5ea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e5ebf1", endColorstr="#e1e5ea",GradientType=0 );
+}
+
+.pentahedron {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: #3e82f7;
+}
+
+.point {
+  fill: #444444;
+}
+
+.rhombus {
+  fill: #2da94f;
+  stroke: #2da94f;
+}
+
+.x {
+  fill: #fdbd00;
+}
+
+.circle {
+  fill: #ed412d;
+}
+
+.line {
+  fill: #7b46fe;
+}
+
+svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40%;
+  transform: translateZ(0px);
+}
+
+.title {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 60%;
+}
+.title h1 {
+  font-weight: 900;
+  font-size: 60px;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  -webkit-text-stroke: 0.04em white;
+}
+.title h3 {
+  font-weight: 550;
+  font-size: 20px;
+  padding: 0;
+  padding-top: 1em;
+  margin: 0;
+  line-height: 2;
+  /* color: #5e7283; */
+  -webkit-text-stroke: 0.02em white;
+}
+
+.anim-text {
+  background-image: linear-gradient(92deg, #000, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 10s infinite linear;
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+.contact {
+  position: absolute;
+  left: 50%;
+  top: 93%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 60%;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #214685;
+}
