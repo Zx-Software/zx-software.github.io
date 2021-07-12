@@ -77,15 +77,24 @@ svg {
   line-height: 1;
   -webkit-text-stroke: 0.045em #eee;
 }
+.title #logo {
+  z-index: 5;
+  position: absolute;
+  left: 50.5%;
+  top: 46%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 10em;
+  opacity: 0.7;
+}
 .title h3 {
+  z-index: 10;
   position: absolute;
   left: 50%;
-  top: 70%;
+  top: 77%;
   transform: translateX(-50%) translateY(-50%);
   font-weight: 500;
   font-size: 20px;
   padding: 0;
-  padding-top: 1em;
   margin: 0;
   line-height: 2;
   letter-spacing: 2px;
