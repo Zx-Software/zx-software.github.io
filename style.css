@@ -75,7 +75,7 @@ svg {
   padding: 0;
   margin: 0;
   line-height: 1;
-  -webkit-text-stroke: 0.045em #eee;
+  text-shadow: #FC0 2px 2px 2px;
 }
 .title #logo {
   z-index: 5;
